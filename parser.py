@@ -5,7 +5,7 @@ import sys
 from collections import defaultdict
 
 # Регулярное выражение для парсинга стандартного лога PostgreSQL
-# Захватываем дату, юзера, БД, время выполнения и сам запрос
+# Захватываем дату, пользователя, БД, время выполнения и сам запрос
 LOG_PATTERN = re.compile(
     r'(?P<timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}).*?'
     r'user=(?P<user>[^,]+),db=(?P<db>[^\s]+)\s+LOG:\s+'
