@@ -1,0 +1,5 @@
+2023-10-27 10:00:01 UTC [1234]: [1-1] user=app_user,db=shop_db LOG:  duration: 125.45 ms  statement: SELECT * FROM orders WHERE user_id = 10;
+2023-10-27 10:00:05 UTC [1234]: [2-1] user=app_user,db=shop_db LOG:  duration: 12.10 ms  statement: UPDATE users SET last_login = NOW() WHERE id = 5;
+2023-10-27 10:00:10 UTC [1235]: [3-1] user=admin,db=shop_db LOG:  duration: 3450.00 ms  statement: SELECT count(*) FROM order_items oi JOIN orders o ON oi.order_id = o.id WHERE o.created_at > '2023-01-01';
+2023-10-27 10:00:15 UTC [1234]: [4-1] user=app_user,db=shop_db LOG:  duration: 0.50 ms  statement: SELECT 1;
+2023-10-27 10:00:20 UTC [1236]: [5-1] user=report_user,db=analytics_db LOG:  duration: 890.22 ms  statement: SELECT * FROM daily_stats WHERE date = '2023-10-26';
